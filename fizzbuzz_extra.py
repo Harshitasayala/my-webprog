@@ -1,5 +1,5 @@
 for x in range(1, 101):
-    if (x % 3 == 0 and x % 5 == 0) or x%35==0 or x%53==0:
+    if (x % 15 == 0) or x%35==0 or x%53==0:
         print("Fizzbuzz")
     elif x % 3 == 0 or x%10==3 or (x>=30 and x<40):
         print("Fizz")
@@ -7,3 +7,4 @@ for x in range(1, 101):
         print("Buzz")
     else:
         print(x)
+
