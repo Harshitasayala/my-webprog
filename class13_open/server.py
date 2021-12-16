@@ -11,7 +11,7 @@ from passwords import encode_password, verify_password
 import requests
 
 def weather_info(zip):
-    result = requests.get(f"https://api.openweathermap.org/data/2.5/weather?zip={zip},US&appid=8413a5a9253e98f6d1f78f579076f866")
+    result = requests.get(f"https://api.openweathermap.org/data/2.5/weather?zip=44240,US&appid=8413a5a9253e98f6d1f78f579076f866")
     if result.status_code != 200:
         return None
     return result.json()
